@@ -21,7 +21,7 @@ export default function Movie({title, id, poster_path}: MovieProps) {
           특정 요구사항이 없는 한 Link를 통한 네비게이션을 권장한다.
       */}
       <img src={poster_path} onClick={onClick} />
-      <Link href={`/movies/${id}`}>{title}</Link>
+      <Link prefetch href={`/movies/${id}`}>{title}</Link>
     </div>
   );
 }

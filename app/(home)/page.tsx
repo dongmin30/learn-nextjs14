@@ -1,11 +1,10 @@
 import styles from "../../styles/home.module.css";
 import Movie from "../../components/movie";
+import { API_URL } from "../constants";
 
 export const metadata = {
   title: "Home",
 };
-
-export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
 async function getMovies() {
   // URL을 통해 fetch된 내용을 nextjs에서 캐싱해준다.
